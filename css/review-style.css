@@ -1,0 +1,152 @@
+.topnav {
+    position: fixed;
+    overflow: hidden;
+    height: 80px;
+    background-color: #28282c;
+    width: 100%;
+    position: relative;
+    top: 0;
+    left: 0%;
+    z-index: 1;
+  }
+  .topnav a {
+    display: inline-block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 20px 30px;
+    text-decoration: none;
+    font-size: 30px;
+    position: relative;
+    top: 50%;
+    left: 33%;
+    transform: translate(-50%, -50%);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  }
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #1a1a1a;
+    color: #f4f4f4;
+    line-height: 1.6;
+}
+
+.header {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+.header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.header p {
+    font-size: 1.2rem;
+    color: #ccc;
+}
+
+.main {
+    padding: 2rem;
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #2a2a2a;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.reviews-section {
+    text-align: center;
+}
+
+.no-reviews {
+    padding: 2rem;
+    background-color: #3a3a3a;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+}
+
+.no-reviews p {
+    font-size: 1.2rem;
+    color: #ddd;
+}
+
+.review-button {
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #ff4c4c;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.review-button:hover {
+    background-color: #e04141;
+}
+
+.review-form {
+    padding: 2rem;
+    background-color: #3a3a3a;
+    border-radius: 10px;
+}
+
+.review-form h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+.review-form label {
+    display: block;
+    margin: 1rem 0 0.5rem;
+    font-weight: bold;
+}
+
+.review-form input,
+.review-form select,
+.review-form textarea {
+    width: 100%;
+    padding: 0.8rem;
+    margin-bottom: 1rem;
+    border: 1px solid #444;
+    border-radius: 5px;
+    background-color: #2a2a2a;
+    color: #fff;
+    font-size: 1rem;
+}
+
+.review-form input:focus,
+.review-form select:focus,
+.review-form textarea:focus {
+    outline: none;
+    border-color: #ff4c4c;
+}
+
+.submit-button {
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #4caf50;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.submit-button:hover {
+    background-color: #43a047;
+}
+
+.footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #333;
+    color: #ccc;
+    font-size: 0.9rem;
+    margin-top: 2rem;
+    border-top: 2px solid #444;
+}
+

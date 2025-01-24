@@ -1,16 +1,133 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <title>Document</title>
+    <title>FAQ - Doon of the Dark Ages</title>
+    <link rel="stylesheet" href="css/FAQ-style.css">
 </head>
 <body>
     <div class="topnav">
         <a href="index.html">Home</a>
         <a href="galerij.html">Galerij</a>
+        <a href="review.html">Recensies</a>
+        <a href="forms.html">Stel uw vraag</a>
         <a href="faq.html">FAQ</a>
     </div>
+
+    <header class="faq-header">
+        <div class="faq-header-content">
+            <h1>FAQ</h1>
+            <p>Veelgestelde vragen over Doon of the Dark Ages</p>
+        </div>
+    </header>
+
+    <main class="faq-container">
+        <section class="faq-category">
+            <h2>Gameplay</h2>
+            <div class="faq-item">
+                <button class="faq-question">Wat voor soort game is Doon of the Dark Ages?</button>
+                <div class="faq-answer">
+                    <p>Doon of the Dark Ages is een actie-avonturenspel dat zich afspeelt in een middeleeuwse fantasiewereld. Spelers gaan op zoek naar verloren relikwieën en nemen het op tegen vijandige krachten.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">Op welke platforms is de game beschikbaar?</button>
+                <div class="faq-answer">
+                    <p>De game is beschikbaar op pc, PlayStation, Xbox en binnenkort ook op de Nintendo Switch.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">Wat is het doel van het spel?</button>
+                <div class="faq-answer">
+                    <p>Het doel van het spel is om een gevaarlijke vijand te verslaan en de vrede in het koninkrijk te herstellen door puzzels op te lossen en missies te voltooien.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">Hoe moeilijk is de game voor beginners?</button>
+                <div class="faq-answer">
+                    <p>De game bevat meerdere moeilijkheidsgraden, zodat zowel beginners als ervaren spelers van het spel kunnen genieten.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="faq-category">
+            <h2>Speciale functies</h2>
+            <div class="faq-item">
+                <button class="faq-question">Heeft de game een multiplayer-modus?</button>
+                <div class="faq-answer">
+                    <p>Ja, er is een coöperatieve multiplayer-modus waarmee je samen met vrienden kunt spelen.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">Kan ik de game offline spelen?</button>
+                <div class="faq-answer">
+                    <p>Ja, de singleplayer-modus kan volledig offline worden gespeeld. Multiplayer vereist een internetverbinding.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">Zijn er uitbreidingen gepland?</button>
+                <div class="faq-answer">
+                    <p>Ja, er zijn meerdere uitbreidingen gepland die nieuwe verhaallijnen, personages en werelden toevoegen.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">Kan ik mijn personage aanpassen?</button>
+                <div class="faq-answer">
+                    <p>Ja, je kunt je personage volledig aanpassen, inclusief uiterlijk, uitrusting en vaardigheden.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="faq-category">
+            <h2>Technische vragen</h2>
+            <div class="faq-item">
+                <button class="faq-question">Wat zijn de minimale systeemeisen?</button>
+                <div class="faq-answer">
+                    <p>De minimale systeemeisen zijn een Intel Core i5-processor, 8 GB RAM en een NVIDIA GTX 960-videokaart.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">Hoeveel opslagruimte heb ik nodig?</button>
+                <div class="faq-answer">
+                    <p>Je hebt minimaal 50 GB vrije opslagruimte nodig voor de installatie van de game.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">Ondersteunt de game ray tracing?</button>
+                <div class="faq-answer">
+                    <p>Ja, de game ondersteunt ray tracing op compatibele hardware voor een verbeterde grafische ervaring.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">Zijn er bekende bugs of problemen?</button>
+                <div class="faq-answer">
+                    <p>We werken continu aan updates om eventuele bugs op te lossen. Controleer onze website voor de laatste patch notes.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="faq-footer">
+        <p>&copy; 2025 Doom: The Dark Ages. Alle rechten voorbehouden.</p>
+    </footer>
+
+    <script>
+        const questions = document.querySelectorAll('.faq-question');
+
+        questions.forEach(question => {
+            question.addEventListener('click', () => {
+                const answer = question.nextElementSibling;
+                const isVisible = answer.style.display === 'block';
+
+                document.querySelectorAll('.faq-answer').forEach(ans => ans.style.display = 'none');
+
+                answer.style.display = isVisible ? 'none' : 'block';
+            });
+        });
+    </script>
 </body>
 </html>
+
+
+

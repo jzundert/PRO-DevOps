@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recensies - Doom of the Dark Ages</title>
+    <link rel="stylesheet" href="css/review-style.css">
+</head>
+<body>
+    <div class="topnav">
+        <a href="index.html">Home</a>
+        <a href="galerij.html">Galerij</a>
+        <a href="review.html">Recensies</a>
+        <a href="forms.html">Stel uw vraag</a>
+        <a href="faq.html">FAQ</a>
+    </div>
+
+    <header class="header">
+        <h1>Recensies</h1>
+        <p>Lees wat anderen zeggen over "Doom of the Dark Ages" of laat je eigen mening achter!</p>
+    </header>
+
+    <main class="main">
+        <section class="reviews-section">
+            <h2>Spelersrecensies</h2>
+            <div class="no-reviews">
+                <p>Er zijn nog geen recensies beschikbaar. Wees de eerste om een recensie te schrijven!</p>
+                <button class="review-button">Schrijf een recensie</button>
+            </div>
+        </section>
+
+        <section class="review-form" style="display: none;">
+            <h2>Schrijf een Recensie</h2>
+            <form id="reviewForm">
+                <label for="name">Naam:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="rating">Beoordeling (1-5):</label>
+                <select id="rating" name="rating" required>
+                    <option value="">Selecteer...</option>
+                    <option value="1">1 - Slecht</option>
+                    <option value="2">2 - Matig</option>
+                    <option value="3">3 - Goed</option>
+                    <option value="4">4 - Erg goed</option>
+                    <option value="5">5 - Uitmuntend</option>
+                </select>
+
+                <label for="review">Recensie:</label>
+                <textarea id="review" name="review" rows="5" required></textarea>
+
+                <button type="submit" class="submit-button">Verzend</button>
+            </form>
+            <div id="thankYouMessage" style="display: none; margin-top: 1rem;">
+                <p>Dankjewel voor je recensie! We waarderen je feedback enorm.</p>
+                <button id="returnButton" class="submit-button">Terug naar recensies</button>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2025 Doom of the Dark Ages. Alle rechten voorbehouden.</p>
+        <div class="banner">
+            <img src="img/doombb.webp" alt="Promotie" style="width: 100%; max-height: 200px; object-fit: cover; margin-top: 1rem;">
+        </div>
+    </footer>
+
+    <script>
+        document.querySelector('.review-button').addEventListener('click', function() {
+            document.querySelector('.reviews-section').style.display = 'none';
+            document.querySelector('.review-form').style.display = 'block';
+        });
+
+        document.getElementById('reviewForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            document.getElementById('reviewForm').style.display = 'none';
+            document.getElementById('thankYouMessage').style.display = 'block';
+        });
+
+        document.getElementById('thankYouMessage').addEventListener('click', function() {
+            document.querySelector('.review-form').style.display = 'none';
+            document.querySelector('.reviews-section').style.display = 'block';
+        });
+    </script>
+</body>
+</html>
+
+

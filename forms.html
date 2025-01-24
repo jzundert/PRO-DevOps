@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Pagina</title>
+    <link rel="stylesheet" href="css/forms-style.css">
+</head>
+<body>  
+
+    <div class="contact-form">
+        <h2>Stel uw vraag</h2>
+        <form id="vraagForm">
+            <label for="name">Naam</label>
+            <input type="text" id="name" name="name" placeholder="Uw naam" required>
+
+            <label for="email">E-mail</label>
+            <input type="email" id="email" name="email" placeholder="Uw e-mailadres" required>
+
+            <label for="question">Uw vraag</label>
+            <textarea id="question" name="question" placeholder="Typ hier uw vraag" required></textarea>
+
+            <button type="submit">Verzenden</button>
+        </form>
+        <div class="success-message" id="successMessage">
+            Bedankt! We laten u zo spoedig mogelijk weten.
+        </div>
+    </div>
+
+    <script>
+        const form = document.getElementById('vraagForm');
+        const successMessage = document.getElementById('successMessage');
+
+        form.addEventListener('submit', function(event) {
+            event.preventDefault();
+            successMessage.style.display = 'block';
+            form.reset();
+        });
+    </script>
+</body>
+</html>
+
+
